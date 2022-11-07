@@ -15,7 +15,7 @@ jobs:
       - run:
           name: install dependencies in client
           command: |
-            npm run complete:install
+            npm run client:install
       - run:
           name: install dependencies in server
           command: |
@@ -23,7 +23,7 @@ jobs:
       - run:
           name: build client
           command: |
-            npm run complete:build
+            npm run client:build
       - run:
           name: build server
           command: |

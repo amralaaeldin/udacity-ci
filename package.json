@@ -1,8 +1,8 @@
 {
     "scripts": {
-        "complete:install": "cd complete && npm install",
+        "client:install": "cd client && npm install",
         "server:install": "cd server && npm install",
-        "complete:build": "cd complete && npm run build",
+        "client:build": "cd client && npm run build",
         "server:build": "cd server && npm run build"
     }
 }
