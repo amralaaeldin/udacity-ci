@@ -2,7 +2,7 @@
     "scripts": {
         "complete:install": "cd complete && npm install",
         "server:install": "cd server && npm install",
-        "complete:build": "cd complete && npm run",
-        "server:build": "cd server && npm run"
+        "complete:build": "cd complete && npm run build",
+        "server:build": "cd server && npm run build"
     }
 }
