@@ -15,11 +15,11 @@ jobs:
       - run:
           name: install dependencies in client
           command: |
-            npm install complete:install
+            npm run complete:install
       - run:
           name: install dependencies in server
           command: |
-            npm install server:install
+            npm run server:install
       - run:
           name: build client
           command: |
