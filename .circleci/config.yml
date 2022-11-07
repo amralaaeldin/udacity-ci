@@ -15,11 +15,11 @@ jobs:
       - run:
           name: install dependencies in client
           command: |
-            npm cache clean -f && rm -rf node_modules && npm i --prefix ./complete
+            npm complete:install
       - run:
           name: install dependencies in server
           command: |
-            npm cache clean -f && rm -rf node_modules && npm i --prefix ./server
+            npm server:install
       - run:
           name: build client
           command: |
