@@ -15,7 +15,7 @@ jobs:
       - run:
           name: install dependencies in client
           command: |
-            ls
+            npm i --prefix ./complete
       - run:
           name: install dependencies in server
           command: |
