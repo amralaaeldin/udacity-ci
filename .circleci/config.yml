@@ -11,8 +11,20 @@ jobs:
     steps:
       - node/install
       - checkout
-      # install dependencies in both apps
+      # install and build dependencies in both apps
       - run:
-          name: hello
+          name: install dependencies in client
           command: |
-            echo "hello-world"
+            npm i --prefix ./complete
+      - run:
+          name: install dependencies in server
+          command: |
+            npm i --prefix ./server
+      - run:
+          name: build client
+          command: |
+            npm run build --prefix ./complete
+      - run:
+          name: build server
+          command: |
+            npm run build --prefix ./server
