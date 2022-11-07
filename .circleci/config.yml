@@ -23,8 +23,8 @@ jobs:
       - run:
           name: build client
           command: |
-            npm run build --prefix ./complete
+            npm run complete:build
       - run:
           name: build server
           command: |
-            npm run build --prefix ./server
+            npm run server:build
